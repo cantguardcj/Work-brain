@@ -6,10 +6,10 @@ One-line goal: show that a writer picking between three versions of a passage te
 
 Read these before working on it:
 
-- `docs/spec.md` is what we're building. Anything marked (proposed) is not decided yet.
+- `docs/build-plan.md` is the main plan. It's step by step, every step has a "Done when" line, and every design choice cites its research. Section 3 lists where it changes the spec, and section 15 says which skill to use at each step.
+- `docs/spec.md` is the original spec. Anything marked (proposed) is not decided yet. Where the build plan changes it, the build plan wins.
 - `docs/transcript-2026-10-21.md` is the meeting it came from. If the spec and the meeting disagree, the meeting wins.
-- `docs/open-questions.md` lists the fuzzy details, a suggested answer for each, and the real answer once decided.
-- `docs/skills-plan.md` says which skill to use at which step, and why.
+- `docs/open-questions.md` lists the decisions that still need a human, a suggested answer for each, and the real answer once decided.
 
 ## When a detail is unclear
 
@@ -19,7 +19,7 @@ Read these before working on it:
 
 ## Skills
 
-`superpowers/skills/` and `pstack/skills/` are copies, not installed. Open the `SKILL.md` for the step you're on, as listed in `docs/skills-plan.md`.
+`superpowers/skills/` and `pstack/skills/` are copies, not installed. Open the `SKILL.md` for the step you're on, as listed in `docs/build-plan.md` section 15.
 
 ## Rules
 

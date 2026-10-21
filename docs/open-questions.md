@@ -34,7 +34,7 @@ The meeting says both. Two at [1:36], three at [6:07] and [27:39]. The spec pick
 
 The spec has 8 style axes, 4 rounds, and 1 or 2 axes per round. So each axis gets tested about once. One click per axis is a coin flip, not a preference.
 
-**Suggested:** cut to 4 axes for the PoC (density, structure, ordering, data handling). Each one then gets tested about twice. Add more axes only if the dry run shows room.
+**Suggested:** cut to 4 axes (density, structure, ordering, data handling) and run 6 scored rounds plus 1 repeat round. Every axis then gets tested 3 times. A short mode (4 rounds plus the repeat) tests each axis twice. Details in [build-plan.md](build-plan.md) §4 and §5.
 **Status:** open
 
 ### 5. Who writes the fact pack?
@@ -46,7 +46,7 @@ The spec has 8 style axes, 4 rounds, and 1 or 2 axes per round. So each axis get
 
 Spec §6 says an LLM distiller reruns after every round. That's slower, costs more, and is harder to debug.
 
-**Suggested:** simple math after each round (count picks per axis). One LLM call at the end turns the scores into the style paragraph.
+**Suggested:** no LLM distiller at all. Count votes per axis after each round, then turn the scores into rules with 16 pre-written sentences. The axes are fixed, so there's nothing for an LLM to discover, and templates can't invent a preference. See [build-plan.md](build-plan.md) §5 and §7.
 **Status:** open
 
 ### 7. The first tester has no "other person" to compare against
@@ -79,6 +79,20 @@ With 3–5 people, "70%" swings a lot on one person.
 
 **Suggested:** a live demo of one person going through the loop, plus a one-page results note.
 **Status:** open
+
+### 12. Can we use the CTD tool's real demographics prompt as the baseline?
+
+The blind eval compares the generic prompt (A) against the generic prompt plus the person's style rules (B). If A is the prompt the CTD tool uses today, a win for B means something for the actual product.
+
+**Suggested:** yes, copy the current CTD demographics prompt. If that isn't allowed, use the plain bank prompt in [build-plan.md](build-plan.md) §7.
+**Status:** open. Blocks Step 10.
+
+### 13. Who reviews the 48 pre-written texts?
+
+A script checks numbers, length and structure, but someone who writes CSRs should skim all 48 for anything that reads wrong. It takes about 30 minutes.
+
+**Suggested:** one medical writer who is **not** going to be a test participant, so they don't see the texts before their session.
+**Status:** open. Blocks Step 7.
 
 ---
 
