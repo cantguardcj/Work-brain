@@ -326,6 +326,7 @@ Skills: pstack `architect`, `principle-model-the-domain`.
 **Step 6. Turn this plan into tasks.**
 Skill: `superpowers/skills/writing-plans`.
 **Done when** every task is small enough to finish and check in one sitting.
+Done: see [the implementation plan](superpowers/plans/2026-10-21-preference-poc.md) (14 tasks, tests written first).
 
 ### Day 3. Build the bank and the scoring
 

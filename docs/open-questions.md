@@ -14,6 +14,7 @@ Several people need to reach it (spec §1), so it can't just live on one laptop.
 - **Option B.** A small web app. Closer to the real product, but it needs hosting and an API key.
 
 **Suggested:** A, if company rules allow it. Only synthetic data goes in, so nothing sensitive leaves.
+**Note (implementation plan):** the [implementation plan](superpowers/plans/2026-10-21-preference-poc.md) assumes B for now, because the builder codes in their own environment and the core logic can later move into the CTD tool. If A is chosen, Tasks 1–7 and the analysis code carry over and Tasks 8–11 change.
 **Status:** open
 
 ### 2. Which model, and is there an API key?

@@ -6,6 +6,7 @@ One-line goal: show that a writer picking between three versions of a passage te
 
 Read these before working on it:
 
+- `docs/superpowers/plans/2026-10-21-preference-poc.md` is the implementation plan: 14 coding tasks with exact files, function signatures, tests and commands. Build from this.
 - `docs/build-plan.md` is the main plan. It's step by step, every step has a "Done when" line, and every design choice cites its research. Section 3 lists where it changes the spec, and section 15 says which skill to use at each step.
 - `docs/spec.md` is the original spec. Anything marked (proposed) is not decided yet. Where the build plan changes it, the build plan wins.
 - `docs/transcript-2026-10-21.md` is the meeting it came from. If the spec and the meeting disagree, the meeting wins.
